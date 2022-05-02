@@ -12,12 +12,40 @@
     padding: 0 1rem;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .83rem;
+}
+
+h6 {
+    font-size: .67rem;
+}
+
 .d-flex {
     display: flex;
 }
 
 .section {
     padding: 2rem 0;
+}
+
+a {
+    text-decoration: unset;
 }
 
 /* css nav */
@@ -42,7 +70,6 @@ nav {
 }
 
 .nav-right ul a {
-    text-decoration: unset;
     padding: 0.5rem 1rem;
     color: white;
 }
@@ -85,11 +112,71 @@ main {
     flex-basis: 100%;
 }
 
-.section .row .card {
+.section.first .row .card {
     min-height: 200px;
-    background-color: greenyellow;
-    border: 1px solid ;
+    background-color: #b5ddff;
+    border-radius: 20px;
 }
+
+.first .card {
+    padding: 0 1.5rem;
+}
+
+.first .card h3 {
+    color: #0084fd;
+    padding: 1rem 0;
+}
+
+.first .card p{
+    padding: .5rem 0;
+}
+
+.first .card .button {
+    padding: .5rem 0;
+}
+
+.first .card .button button {
+    border: transparent;
+    background-color: #0084fd;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+.first .card .button button a {
+    color: white;
+}
+
+.phone {
+    position: relative;
+    overflow: hidden;
+}
+
+.phone img {
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.card.sm h3 {
+    padding: .5rem;
+}
+
+.card.sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card.sm * {
+    padding: .5rem;
+    text-align: center;
+}
+
+.card.sm i {
+    font-size: 3rem;
+    color: #0084fd;
+}
+
+
 
 /* strategy section */
 
@@ -103,3 +190,40 @@ main {
 
 /* Testimonials */
 
+.intro-testimonial {
+    text-align: center;
+}
+
+.intro-testimonial * {
+    padding: 1rem;
+}
+
+.intro-testimonial h1 {
+    color: #9792e4;
+}
+
+.intro-testimonial h4 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.row-clmn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img-container img {
+    height: 150px;
+    border-radius: 20px;
+}
+
+.d-flex.test-prop {
+    align-items: center;
+    gap: 2rem;
+}
+
+.card.d-flex.test-prop {
+    background-color: #9792e4;
+    border-radius: 20px;
+}
